@@ -98,15 +98,3 @@ book = Book("Python Guide", 350)
 print(book)
 print(f"Length: {len(book)}")
 
-# Class methods and static methods
-class Math:
-    @staticmethod
-    def add(x, y):
-        return x + y
-    
-    @classmethod
-    def info(cls):
-        return f"Math utility class"
-
-print(Math.add(5, 3))
-print(Math.info())
