@@ -21,5 +21,3 @@ else:
 fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:         # start loop block
     print("Fruit:", fruit)   # indented -> inside the loop
-
-#  Avoid mixing tabs and spaces; prefer 4 spaces for indentation.
