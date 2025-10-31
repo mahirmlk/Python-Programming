@@ -1,32 +1,32 @@
 # Assignment Operators in Python
+
 # Basic assignment (=)
 num = 10
-print("Initial value:", num)  # Output: 10
+print("Initial value:", num)  
 
-# Add and assign (+=) - equivalent to num = num + 5
 num += 5
-print("After +=:", num)  # Output: 15
+print("After +=:", num) 
 
-# Subtract and assign (-=) - equivalent to num = num - 3
+# Subtract and assign (-=) 
 num -= 3
-print("After -=:", num)  # Output: 12
+print("After -=:", num)  
 
-# Multiply and assign (*=) - equivalent to num = num * 2
+# Multiply and assign (*=) 
 num *= 2
-print("After *=:", num)  # Output: 24
+print("After *=:", num) 
 
-# Divide and assign (/=) - equivalent to num = num / 4
+# Divide and assign (/=) 
 num /= 4
-print("After /=:", num)  # Output: 6.0
+print("After /=:", num)  
 
 # Floor divide and assign (//=)
 num //= 2
-print("After //=:", num)  # Output: 3.0
+print("After //=:", num)  
 
 # Modulus and assign (%=)
 num %= 2
-print("After %=:", num)  # Output: 1.0
+print("After %=:", num)  
 
 # Power and assign (**=)
 num **= 3
-print("After **=:", num)  # Output: 1.0
+print("After **=:", num) 
