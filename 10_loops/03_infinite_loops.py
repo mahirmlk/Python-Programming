@@ -1,4 +1,5 @@
 # Example of infinite loops in Python
+
 # Safe version: an 'infinite' loop that breaks after a few iterations
 
 count = 0
@@ -12,7 +13,3 @@ while True:
         break
 
 
-# Notes:
-# - True infinite loops are useful for servers, daemons, and event loops.
-# - Always provide a clean shutdown mechanism (signal handling or break conditions).
-# - To stop an infinite loop running in terminal, use Ctrl+C (KeyboardInterrupt) on
