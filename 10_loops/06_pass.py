@@ -1,5 +1,5 @@
-# `pass` statement in Python
 # `pass` is a no-op (does nothing). Use it as a placeholder
+
 # when a block is required syntactically but you have no code yet.
 
 # 1) placeholder in a function
