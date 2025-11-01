@@ -1,28 +1,30 @@
 # If-Elif-Else Statement 
+
 # Grade classification example
 marks = 85
 
 # Multiple conditions checked in order
 if marks >= 90:
-    print("Grade: A+")               # Won't execute
+    print("Grade: A+")              
 elif marks >= 80:
-    print("Grade: A")                # This will execute
+    print("Grade: A")                
     print("Excellent performance!")
 elif marks >= 70:
-    print("Grade: B")                # Won't execute (already found match)
+    print("Grade: B")               
 elif marks >= 60:
-    print("Grade: C")                # Won't execute
+    print("Grade: C")               
 else:
-    print("Grade: F")                # Won't execute
+    print("Grade: F")               
     print("Need improvement")
 
 # Traffic light example
+
 light_color = "yellow"
 
 if light_color == "red":
     print("Stop!")
 elif light_color == "yellow":
-    print("Caution - prepare to stop")  # This will execute
+    print("Caution - prepare to stop")  
 elif light_color == "green":
     print("Go!")
 else:
@@ -36,6 +38,6 @@ if age < 13:
 elif age < 20:
     print("Teenager")
 elif age < 60:
-    print("Adult")                   # This will execute
+    print("Adult")                   
 else:
     print("Senior")
