@@ -1,4 +1,5 @@
-# Match-Case Statement (Available in Python 3.10+)
+# Match-Case Statement 
+
 # Day of week example
 day_number = 3
 
@@ -8,14 +9,14 @@ match day_number:
     case 2:
         print("Tuesday")
     case 3:
-        print("Wednesday")  # This will execute
+        print("Wednesday")
     case 4:
         print("Thursday")
     case 5:
         print("Friday")
-    case 6 | 7:  # Multiple values in one case
+    case 6 | 7:  
         print("Weekend!")
-    case _:  # Default case (like else)
+    case _:  
         print("Invalid day number")
 
 # HTTP status code example
@@ -25,10 +26,10 @@ match status_code:
     case 200:
         print("OK - Success")
     case 404:
-        print("Not Found")  # This will execute
+        print("Not Found")  
     case 500:
         print("Internal Server Error")
-    case code if code >= 400:  # Guard condition
+    case code if code >= 400:  
         print("Client/Server Error")
     case _:
         print("Unknown status")
@@ -40,7 +41,7 @@ match grade:
     case 'A' | 'A+':
         print("Excellent!")
     case 'B' | 'B+':
-        print("Good job!")  # This will execute
+        print("Good job!")  
     case 'C':
         print("Average")
     case 'D' | 'F':
