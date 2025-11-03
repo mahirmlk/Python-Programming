@@ -1,7 +1,7 @@
 count = 0  # Global variable
 
 def increment():
-    global count  # Tell Python we want to modify the global variable
+    global count  
     count = count + 1
     print(f"Count inside function: {count}")
 
@@ -11,12 +11,12 @@ def reset():
     print("Count reset to 0")
 
 # Test the functions
-print(f"Initial count: {count}")  # 0
-increment()                       # Count inside function: 1
-increment()                       # Count inside function: 2
-print(f"Count outside: {count}")  # 2
-reset()                          # Count reset to 0
-print(f"Final count: {count}")   # 0
+print(f"Initial count: {count}")  
+increment()                      
+increment()                      
+print(f"Count outside: {count}")  
+reset()                          
+print(f"Final count: {count}")   
 
 # without global keyword
 
@@ -49,7 +49,7 @@ def create_global():
     new_var = "I'm a new global variable!"
 
 create_global()
-print(new_var)  # I'm a new global variable!
+print(new_var) 
 
 # When not to use global keyword
 
@@ -57,12 +57,12 @@ message = "Hello"
 
 def read_only():
     # No 'global' needed - just reading the variable
-    print(message)  # This works fine
+    print(message) 
 
 def local_variable():
-    message = "Local message"  # This creates a new local variable
-    print(message)  # Prints the local version
+    message = "Local message"  
+    print(message)  
 
-read_only()        # Hello
-local_variable()   # Local message
-print(message)     # Hello (global unchanged)
+read_only()        
+local_variable()  
+print(message)    
