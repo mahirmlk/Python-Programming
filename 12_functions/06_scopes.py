@@ -1,5 +1,6 @@
 # Global Scope: Variables defined at the top level of your program
 # Local Scope: Variables defined inside a function
+
 # Enclosing Scope: Variables in outer functions (for nested functions)
 
 x = "global"
@@ -8,8 +9,8 @@ def test_scope():
     x = "local"        # This creates a new local variable
     print(f"Inside function: {x}")
 
-test_scope()           # Output: Inside function: local
-print(f"Outside function: {x}")  # Output: Outside function: global
+test_scope()           
+print(f"Outside function: {x}")  
 
 # Another Example
 
@@ -25,17 +26,17 @@ def outer_function():
         local_var = "I'm local to inner function!"
         
         # Accessing variables from different scopes
-        print(local_var)      # Local scope
-        print(outer_var)      # Enclosing scope
-        print(global_var)     # Global scope
+        print(local_var)      
+        print(outer_var)      
+        print(global_var)     
     
     inner_function()
-    print(outer_var)          # Can access its own local variable
-    # print(local_var)        # Error! Can't access inner function's local variable
+    print(outer_var)       
+    # print(local_var)        
 
 def another_function():
-    print(global_var)         # Can access global variable
-    # print(outer_var)        # Error! Can't access other function's local variable
+    print(global_var)        
+    # print(outer_var)       
 
 # Test the functions
 outer_function()
