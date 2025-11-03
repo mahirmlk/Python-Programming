@@ -9,7 +9,6 @@ def factorial(n):
     # Recursive case: n! = n * (n-1)!
     return n * factorial(n - 1)
 
-print("=== FACTORIAL ===")
 print(f"5! = {factorial(5)}")  # Output: 120
 print(f"0! = {factorial(0)}")  # Output: 1
 
@@ -24,7 +23,6 @@ def fibonacci(n):
     # Recursive case: F(n) = F(n-1) + F(n-2)
     return fibonacci(n - 1) + fibonacci(n - 2)
 
-print("\n=== FIBONACCI ===")
 for i in range(8):
     print(f"F({i}) = {fibonacci(i)}")
 
@@ -39,7 +37,6 @@ def power(base, exp):
     # Recursive case
     return base * power(base, exp - 1)
 
-print("\n=== POWER FUNCTION ===")
 print(f"2^5 = {power(2, 5)}")  # Output: 32
 print(f"3^4 = {power(3, 4)}")  # Output: 81
 
@@ -52,6 +49,5 @@ def sum_list(lst):
     # Recursive case: first element + sum of rest
     return lst[0] + sum_list(lst[1:])
 
-print("\n=== SUM OF LIST ===")
 numbers = [1, 2, 3, 4, 5]
 print(f"Sum of {numbers} = {sum_list(numbers)}")  # Output: 15
